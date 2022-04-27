@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document 3</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      .title-document {
+        font-size: 1.2rem;
+        margin-left: 20%;
+        margin-top: 40px;
+      }
+      .header-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .header-cell-right {
+        border: 1px solid #000;
+        height: 60px;
+        width: 20%;
+        margin-top: -70px;
+        display: flex;
+      }
+      .header-cell {
+        border-right: 1px solid #000;
+        width: 30%;
+      }
+      .detail {
+        display: flex;
+        width: 100%;
+      }
+      .left-content,
+      .right-content {
+        width: 50%;
+      }
+      .title-right-content {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 10px 0 20px 0;
+      }
+      .table1-content {
+        display: flex;
+        align-items: flex-start;
+      }
+      .table2-content {
+        margin-top: 20px;
+      }
+      table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .left-table {
+        border: 2px solid black;
+      }
+      .align-center {
+        text-align: center;
+      }
+      .align-left {
+        text-align: left;
+      }
+      .align-right {
+        text-align: right;
+      }
+      .row-height {
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="doc-header">
+      <p class="title-document">「入居時現況確認書」にご記入・ご送付の説明</p>
+      <div class="header-right">
+        <div class="header-cell-right">
+          <div class="header-cell"></div>
+          <div class="header-cell"></div>
+          <div></div>
+        </div>
+        <div>（貸主返送用）</div>
+      </div>
+    </div>
+    <div class="detail">
+      <div class="left-content" style="margin-right: 15px;">
+        <div style="font-size: 0.8rem; margin: 15px 0 30px 0;">
+          建物賃貸借契約書に定める（原状回復および明渡し）に基づき「入居時現況確認書」をお渡し致します。
+        </div>
+        <div style="font-size: 0.9rem;">[目的]</div>
+        <div style="font-size: 0.9rem;">
+          「入居時現況確認書」は退去時の原状回復にかかる費用負担者（借主/貸主）を明確にするた <br/>
+          めに、入居時に室内の状況（汚損等）を記録し、記入事項に関し退去時にお客様に修繕義務<br/>
+          を免除する箇所を証明する大切な書類です。
+        </div>
+        <div style="font-size: 0.8rem; margin-top: 15px;">
+          ※この書類は居室の修繕を依頼するものではありません※<br/>
+          ※返送期限　鍵引渡し日より２週間以内　消印有効※
+        </div>
+        <div style="font-size: 0.8rem; margin-top: 50px;">[注意]</div>
+        <div style="font-size: 0.8rem;">
+          １. お荷物搬入前に当書面の記録を完了していただきますようお願い致します。<br/>
+          ２. <span style="font-weight: bold;">期限までにご返送が無い場合は、
+            ご指摘事項がないものとさせていただきます。</span><br/>
+          ３. 生活上に支障をきたす故障等は本書に記入せず、当社にご連絡下さい。<br/>
+          ４. 指摘事項によりまして、弊社担当より状況確認等の連絡を取らせていただく場合もございます。
+        </div>
+        <div style="font-size: 0.9rem; margin-top: 15px;">
+          [問合せ先]　株式会社アンビションＤＸホールディングス　プロパティマネジメント部<br/>
+          TEL：03-6439-8933　E-mail: bm-info@am-bition.jp
+        </div>
+        <h2 style="text-align: center;">（ご提出から保管までの流れ）</h2>
+        <div style="margin-top: 30px; font-size: 0.9rem;">(1) 確認方法</div>
+        <div style="font-size: 0.9rem; margin-left: 30px;">家具を配置する前にお客様ご自身で住戸内をご確認下さい。</div>
+        <div style="margin-top: 20px;">(2) 記入方法</div>
+        <div style="font-size: 0.9rem; margin-left: 30px;">
+          入居時現況確認書は２枚複写式の為、上下を確認し、ボールペンで強くご記入ください。<br/>
+          <span style="font-size: 1.2rem;">■</span>一覧表の項目「箇所番号・部屋名・部位・確認内容（具体的）」にご記入ください。<br/>
+          <span style="font-size: 1.2rem;">■</span>記入箇所が多い場合は写真のご提出願います。
+        </div>
+        <div style="margin-top: 20px;">(3) ご署名・ご捺印</div>
+        <div style="font-size: 0.9rem; margin-left: 30px;">
+          ご契約者名・連絡先のご記入・ご捺印 <br/>
+          ※ご指摘事項が無い場合でも必ずご郵送ください。<br/>
+        </div>
+        <div style="margin-top: 20px;">(4) ご 郵 送</div>
+        <div style="font-size: 0.9rem; margin-left: 30px;">
+          ご返送期日までに、入居時現況確認書を返送用封筒にてご郵送ください。<br/>
+        </div>
+        <div style="margin-top: 20px;">(5) 保　管</div>
+        <div style="font-size: 0.9rem; margin-left: 30px;">
+          １.貸主返送用は弊社にて保管させていただき、借主様保管用はご自身で退去時まで大切に保管願います。<br/>
+          ２.退去立会の際、借主様保管用をご持参ください。<br/>
+          ３.本紙を弊社へご郵送後、到着のご連絡は特に致しませんのでご了承ください。
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="title-right-content">入居時現況確認書</div>
+        <div class="table1-content" style="width: 100%;">
+          <table class="left-table" style="width: 100%;">
+            <tr style="height: 80px;">
+              <td style="width: 30%; font-size: 0.7rem;" class="align-center">
+                ご入居物件住所<br/>
+                （ご入居者様住所）
+              </td>
+              <td style="width: 70%;" colspan="2"></td>
+            </tr>
+            <tr style="height: 80px;">
+              <td style="width: 30%; font-size: 0.7rem;" class="align-center">
+                ご入居物件住所<br/>
+                （ご入居者様住所）
+              </td>
+              <td style="width: 50%;" class="align-right">様</td>
+              <td style="width: 20%;" class="align-center">印</td>
+            </tr>
+            <tr style="height: 40px;">
+              <td style="width: 30%; font-size: 0.7rem;" class="align-center">
+                ご契約者様連絡先<br/>
+                （ご入居者様連絡先）
+              </td>
+              <td style="width: 70%;" colspan="2">TEL:</td>
+            </tr>
+            <tr style="height: 40px;">
+              <td style="width: 30%; font-size: 0.7rem;" class="align-center">メールアドレス</td>
+              <td style="width: 70%;" colspan="2"></td>
+            </tr>
+          </table>
+          <table class="right-table" style="width: 70%;">
+            <tr style="width: 40px;">
+              <td style="width: 30%; font-size: 0.7rem;" class="align-center">建物名称</td>
+              <td style="width: 70%; font-size: 0.7rem;"></td>
+            </tr>
+            <tr style="height: 40px;">
+              <td style="width: 30%; font-size: 0.7rem;" class="align-center">部屋番号</td>
+              <td style="width: 70%; font-size: 0.7rem;" class="align-right">号室</td>
+            </tr>
+            <tr style="height: 40px;">
+              <td style="width: 30%; font-size: 0.7rem;" class="align-center">
+                ご契約<br/>
+                開始日
+              </td>
+              <td style="width: 70%; font-size: 0.7rem;" class="align-right">年　　　月　　　日</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table2-content" style="width: 100%;">
+          <table style="width: 100%; font-size: 0.9rem;" class="align-center">
+            <tr>
+              <td style="width: 10%;">番号</td>
+              <td style="width: 20%;">部 屋 名</td>
+              <td style="width: 20%;">部位・場所</td>
+              <td style="width: 50%;">確 認 内 容</td>
+            </tr>
+            <tr>
+              <td>例 ①</td>
+              <td>居室</td>
+              <td>壁</td>
+              <td>右側クロス剝がれあり。</td>
+            </tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+            <tr class="row-height"><td></td><td></td><td><td></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: flex-end; margin-top: 20px; font-size: 0.8rem;">
+      ※上記内容について建物賃貸借契約書に定める本件貸室明渡し時における原状回復義務から免除します。<br/>
+      　尚、箇所が多い場合は写真のご提出お願いいたします。
+    </div>
+    <div style="text-align: right; margin: 20px 5% 20px 0; font-size: 0.9rem">
+      期日　　　　　年　　　月　　　日
+    </div>
+    <div style="text-align: right; font-size: 0.9rem">
+      株式会社アンビションＤＸホールディングス
+    </div>
+  </body>
+</html>
