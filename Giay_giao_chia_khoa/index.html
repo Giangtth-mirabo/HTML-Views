@@ -42,7 +42,8 @@
         border: 1px dotted black;
         border-collapse: collapse;
       }
-      .receipts-list-title, .remarks-title {
+      .receipts-list-title,
+      .remarks-title {
         font-size: 1.2rem;
         margin-top: 20px;
       }
@@ -85,10 +86,17 @@
         align-items: center;
         justify-content: space-between;
       }
-      .m-t-7 { margin-top: 7px; }
-      .m-l-5 { margin-left: 5px; }
-      .m-r-5 { margin-right: 5px; }
-      #company-list, #company-list td {
+      .m-t-7 {
+        margin-top: 7px;
+      }
+      .m-l-5 {
+        margin-left: 5px;
+      }
+      .m-r-5 {
+        margin-right: 5px;
+      }
+      #company-list,
+      #company-list td {
         border: 1px dotted black;
         border-collapse: collapse;
         font-size: 0.9rem;
@@ -104,8 +112,22 @@
       }
       #final-table {
         width: 70%;
+        text-align: center;
       }
-      #final-table, #final-table td {
+      #final-table-1 {
+        width: 15%;
+        text-align: center;
+      }
+      #final-table-2 {
+        width: 80%;
+        text-align: center;
+      }
+      #final-table,
+      #final-table td,
+      #final-table-1,
+      #final-table-1 td,
+      #final-table-2,
+      #final-table-2 td {
         border: 1px dotted black;
         border-collapse: collapse;
         font-size: 0.9rem;
@@ -232,11 +254,11 @@
       <table id="remarks-table">
         <tr>
           <td>メールボックス開錠方法</td>
-          <td style="text-align: center;">C679</td>
+          <td style="text-align: center">C679</td>
         </tr>
         <tr>
           <td>宅配ボックス開錠方法</td>
-          <td style="text-align: center;">業者指定の任意の番号</td>
+          <td style="text-align: center">業者指定の任意の番号</td>
         </tr>
         <tr>
           <td colspan="2">
@@ -246,12 +268,12 @@
                 <td class="dis-flex">
                   <div>
                     <input
-                    type="checkbox"
-                    id="row5-11"
-                    name="row5-11"
-                    value="row5-11"
-                    class="checkbox-custom m-t-7"
-                  />
+                      type="checkbox"
+                      id="row5-11"
+                      name="row5-11"
+                      value="row5-11"
+                      class="checkbox-custom m-t-7"
+                    />
                   </div>
                   <div class="m-l-5">鍵交換代</div>
                 </td>
@@ -269,8 +291,8 @@
                     </div>
                     <div class="m-l-5">カードキー</div>
                   </div>
-                  <div style="margin-left: 30px;">16,500円</div>
-                  <div class="dis-flex" style="margin-left: 10px;">
+                  <div style="margin-left: 30px">16,500円</div>
+                  <div class="dis-flex" style="margin-left: 10px">
                     <div>
                       <input
                         type="checkbox"
@@ -282,7 +304,7 @@
                     </div>
                     <div>チップキー</div>
                   </div>
-                  <div style="margin-left: 40px;">16,500円</div>
+                  <div style="margin-left: 40px">16,500円</div>
                 </td>
               </tr>
               <tr>
@@ -312,7 +334,7 @@
                     </div>
                     <div class="m-l-5">照明リモコン</div>
                   </div>
-                  <div style="margin-left: 40px;">5,500円</div>
+                  <div style="margin-left: 40px">5,500円</div>
                 </td>
               </tr>
               <tr>
@@ -340,7 +362,7 @@
                     />
                   </div>
                   <div class="m-l-5">エアコンリモコン</div>
-                  <div style="margin-left: 50px;">16,500円</div>
+                  <div style="margin-left: 50px">16,500円</div>
                 </td>
               </tr>
             </table>
@@ -348,40 +370,40 @@
         </tr>
       </table>
     </div>
-    <div style="font-size: 1rem;">
+    <div style="font-size: 1rem">
       ※家賃発生日前の入室が発覚した際は、日割り家賃等損害賠償を請求する場合が<br />
       　ございますので予めご了承下さい。
     </div>
-    <div style="font-size: 0.9rem; margin-top: 20px;">
+    <div style="font-size: 0.9rem; margin-top: 20px">
       ※インターネット配電盤、駐輪場、駐車場等の共用部については下記共用管理会社へご連絡お願い致します。
     </div>
     <table id="company-list" class="width-full">
       <tr>
         <td>共用管理会社名/電話番号</td>
         <td>株式会社ＳＴＡＲ合人社</td>
-        <td style="text-align: center;">03-5201-3383</td>
+        <td style="text-align: center">03-5201-3383</td>
       </tr>
       <tr>
         <td>専有管理会社名/電話番号</td>
         <td>​株式会社アンビション DX ホールディングス</td>
-        <td style="text-align: center;">03-6439-8911</td>
+        <td style="text-align: center">03-6439-8911</td>
       </tr>
     </table>
     <div class="year-month-text">年　　　月　　　　日</div>
-    <div style="font-size: 0.9rem;">
+    <div style="font-size: 0.9rem">
       契約に伴い、契約内容を理解したうえで、上記の通り受領いたしました。
     </div>
-    <div style="font-size: 0.9rem;">
+    <div style="font-size: 0.9rem">
       退室時には速やかにご返却するとともに、紛失及び破損の場合は実費を負担いたします。
     </div>
-    <div class="dis-flex flex-between" style="margin-top: 25px;">
+    <div class="dis-flex flex-between" style="margin-top: 25px">
       <div>氏名（社名）</div>
-      <div style="margin-right: 100px;">㊞</div>
+      <div style="margin-right: 100px">㊞</div>
     </div>
     <hr class="dotted-hr" />
-    <div style="margin-top: 25px;">契約者携帯番号</div>
+    <div style="margin-top: 25px">契約者携帯番号</div>
     <hr class="dotted-hr" />
-    <div style="margin-top: 20px; justify-content: flex-end;" class="dis-flex">
+    <div style="margin-top: 20px; justify-content: flex-end" class="dis-flex">
       <table id="final-table">
         <tr>
           <td>引渡担当</td>
@@ -518,11 +540,11 @@
       <table id="remarks-table">
         <tr>
           <td>メールボックス開錠方法</td>
-          <td style="text-align: center;">C679</td>
+          <td style="text-align: center">C679</td>
         </tr>
         <tr>
           <td>宅配ボックス開錠方法</td>
-          <td style="text-align: center;">業者指定の任意の番号</td>
+          <td style="text-align: center">業者指定の任意の番号</td>
         </tr>
         <tr>
           <td colspan="2">
@@ -532,12 +554,12 @@
                 <td class="dis-flex">
                   <div>
                     <input
-                    type="checkbox"
-                    id="row5-11"
-                    name="row5-11"
-                    value="row5-11"
-                    class="checkbox-custom m-t-7"
-                  />
+                      type="checkbox"
+                      id="row5-11"
+                      name="row5-11"
+                      value="row5-11"
+                      class="checkbox-custom m-t-7"
+                    />
                   </div>
                   <div class="m-l-5">鍵交換代</div>
                 </td>
@@ -555,8 +577,8 @@
                     </div>
                     <div class="m-l-5">カードキー</div>
                   </div>
-                  <div style="margin-left: 30px;">16,500円</div>
-                  <div class="dis-flex" style="margin-left: 10px;">
+                  <div style="margin-left: 30px">16,500円</div>
+                  <div class="dis-flex" style="margin-left: 10px">
                     <div>
                       <input
                         type="checkbox"
@@ -568,7 +590,7 @@
                     </div>
                     <div>チップキー</div>
                   </div>
-                  <div style="margin-left: 40px;">16,500円</div>
+                  <div style="margin-left: 40px">16,500円</div>
                 </td>
               </tr>
               <tr>
@@ -598,7 +620,7 @@
                     </div>
                     <div class="m-l-5">照明リモコン</div>
                   </div>
-                  <div style="margin-left: 40px;">5,500円</div>
+                  <div style="margin-left: 40px">5,500円</div>
                 </td>
               </tr>
               <tr>
@@ -626,108 +648,133 @@
                     />
                   </div>
                   <div class="m-l-5">エアコンリモコン</div>
-                  <div style="margin-left: 50px;">16,500円</div>
+                  <div style="margin-left: 50px">16,500円</div>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
         <tr>
-          <td>・共用部</td>
-        </tr>
-        <tr class="dis-flex">
-          <td class="dis-flex">
-            <div>
-              <input
-                type="checkbox"
-                id="row8-11"
-                name="row8-11"
-                value="row8-11"
-                class="checkbox-custom m-t-7"
-              />
-            </div>
-            <div class="m-l-5 m-r-5">駐輪場</div>
-            <div class="dis-flex" style="margin-left">
-              <div>
-                (<input
-                  type="checkbox"
-                  id="row8-12"
-                  name="row8-12"
-                  value="row8-12"
-                  class="checkbox-custom m-t-7"
-                />
-              </div> 
-              <div>ステッカー)</div> 
-            </div>
-          </td>
-          <td class="dis-flex">
-            <div>
-              <input
-                type="checkbox"
-                id="row8-13"
-                name="row8-13"
-                value="row8-13"
-                class="checkbox-custom m-t-7"
-              />
-            </div>
-            <div class="m-l-5">駐車場</div>
-            <div class="dis-flex">
-              <div>
-                (<input
-                  type="checkbox"
-                  id="row8-12"
-                  name="row8-12"
-                  value="row8-12"
-                  class="checkbox-custom m-t-7"
-                />
-              </div> 
-              <div>機械式鍵)</div> 
-            </div>
+          <td colspan="2">
+            <div>・共用部</div>
+            <table style="width: 100%">
+              <tr class="dis-flex">
+                <td class="dis-flex" style="width: 25%">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="row8-11"
+                      name="row8-11"
+                      value="row8-11"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <div class="m-l-5">駐輪場</div>
+                  <div class="dis-flex">
+                    <div>
+                      (<input
+                        type="checkbox"
+                        id="row8-12"
+                        name="row8-12"
+                        value="row8-12"
+                        class="checkbox-custom m-t-7"
+                      />
+                    </div>
+                    <div>ステッカー)</div>
+                  </div>
+                </td>
+                <td class="dis-flex" style="width: 20%">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="row8-13"
+                      name="row8-13"
+                      value="row8-13"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <div class="m-l-5 m-r-5">駐車場</div>
+                  <div class="dis-flex">
+                    <div>
+                      (<input
+                        type="checkbox"
+                        id="row8-12"
+                        name="row8-12"
+                        value="row8-12"
+                        class="checkbox-custom m-t-7"
+                      />
+                    </div>
+                    <div>機械式鍵)</div>
+                  </div>
+                </td>
+                <td class="dis-flex">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="row8-14"
+                      name="row8-14"
+                      value="row8-14"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <div class="m-l-5 m-r-5">バイク置場</div>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
     </div>
-    <div style="font-size: 1rem;">
+    <div style="font-size: 1rem">
       ※家賃発生日前の入室が発覚した際は、日割り家賃等損害賠償を請求する場合が<br />
       　ございますので予めご了承下さい。
     </div>
-    <div style="font-size: 0.9rem; margin-top: 20px;">
+    <div style="font-size: 0.9rem; margin-top: 20px">
       ※インターネット配電盤、駐輪場、駐車場等の共用部については下記共用管理会社へご連絡お願い致します。
     </div>
     <table id="company-list" class="width-full">
       <tr>
         <td>共用管理会社名/電話番号</td>
         <td>株式会社ＳＴＡＲ合人社</td>
-        <td style="text-align: center;">03-5201-3383</td>
+        <td style="text-align: center">03-5201-3383</td>
       </tr>
       <tr>
         <td>専有管理会社名/電話番号</td>
         <td>​株式会社アンビション DX ホールディングス</td>
-        <td style="text-align: center;">03-6439-8911</td>
+        <td style="text-align: center">03-6439-8911</td>
       </tr>
     </table>
     <div class="year-month-text">年　　　月　　　　日</div>
-    <div style="font-size: 0.9rem;">
+    <div style="font-size: 0.9rem">
       契約に伴い、契約内容を理解したうえで、上記の通り受領いたしました。
     </div>
-    <div style="font-size: 0.9rem;">
+    <div style="font-size: 0.9rem">
       退室時には速やかにご返却するとともに、紛失及び破損の場合は実費を負担いたします。
     </div>
-    <div class="dis-flex flex-between" style="margin-top: 25px;">
+    <div class="dis-flex flex-between" style="margin-top: 25px">
       <div>氏名（社名）</div>
-      <div style="margin-right: 100px;">㊞</div>
+      <div style="margin-right: 100px">㊞</div>
     </div>
     <hr class="dotted-hr" />
-    <div style="margin-top: 25px;">契約者携帯番号</div>
+    <div style="margin-top: 25px">契約者携帯番号</div>
     <hr class="dotted-hr" />
-    <div style="margin-top: 20px; justify-content: flex-end;" class="dis-flex">
-      <table id="final-table">
+    <div
+      class="dis-flex"
+      style="margin-top: 20px; justify-content: space-between"
+    >
+      <table id="final-table-1">
         <tr>
-          <td>引渡担当</td>
-          <td>検　印</td>
-          <td>保　険</td>
-          <td>入　金</td>
-          <td>作　成</td>
+          <td>共用部入金</td>
+        </tr>
+        <tr style="height: 80px"></tr>
+      </table>
+      <table id="final-table-2">
+        <tr>
+          <td style="width: 15%;">引渡担当</td>
+          <td style="width: 15%;">検　印</td>
+          <td style="width: 15%;">保　険</td>
+          <td colspan="2" style="width: 30%;">入　金</td>
+          <td style="width: 15%;">作　成</td>
         </tr>
         <tr style="height: 80px">
           <td></td>
