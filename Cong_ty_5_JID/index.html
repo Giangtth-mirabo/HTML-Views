@@ -8,7 +8,7 @@
     <style>
       .dis-flex {
         display: flex;
-        align-items: center;
+        flex-direction: row;
       }
       .flex-between {
         display: flex;
@@ -20,7 +20,6 @@
       .title {
         color: white;
         background: #3f3f3f;
-        padding: 3px;
         text-align: center;
       }
       .align-center {
@@ -62,6 +61,7 @@
       .m-t-7 {
         margin-top: 7px;
       }
+      .m-l-15 { margin-left: 15px; }
       .font-weight-bold {
         font-weight: bold;
       }
@@ -70,6 +70,10 @@
       }
       .justify-center {
         justify-content: center;
+      }
+      hr.dotted-hr {
+        border-top: 1px dotted #000;
+        margin-bottom: -2px;
       }
     </style>
   </head>
@@ -80,34 +84,44 @@
         <div style="margin-left: 10%">保証会社：JID</div>
         <div style="margin-right: 5%">担当：　　　　　検印：</div>
       </div>
-      <h1 class="title">重　要　な　お　知　ら　せ</h1>
+      <h2 class="title">重　要　な　お　知　ら　せ</h2>
       <h2 class="align-center">家賃振込み・自動引落しに関するご注意</h2>
-      <div style="font-size: 1.3rem" class="align-center font-weight-bold">
-        (<span style="margin-right: 30px;"></span>27 &nbsp;)までに(　　)月分のお家賃を下記口座にお振込み下さい。
+      <div style="height: 100px">
+        <div
+          style="font-size: 1.1rem; margin: 40px 0 15px 0"
+          class="align-center font-weight-bold"
+        >
+          (<span style="margin: 0 30px 0 50px">/</span>)までに(&nbsp; &nbsp;
+          &nbsp; &nbsp; )月分のお家賃を下記口座にお振込み下さい。
+          <br />
+        </div>
+        <div style="font-size: 1.1rem" class="align-center font-weight-bold">
+          初回お支払月(　　月分)に関しては保証会社様より新しい住所に <br />
+          はがきにてご案内が届きますのでご確認ください。
+        </div>
       </div>
-      <div style="font-size: 1.2rem; margin: 0 5% 15px" class="align-right">
-        （<span>_____月分</span>）になります。
+      <div style="font-size: 0.8rem" class="align-center">
+      （恐れ入りますが、振込手数料・振替手数料\500円(税別)は、お客様負担でお願い致します。）
+      </div>
+      <div style="font-size: 0.8rem; margin-left: 100px;">
+        ※引き落とし月は予定になります。
+      </div>
+      <div style="font-size: 0.8rem" class="align-center">
+        不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。
       </div>
       <div class="dis-flex" style="justify-content: center">
         <div>
-          <div style="font-size: 0.8rem; margin: 75px 0 0 80px">
-            ※引き落とし月は予定になります。
-          </div>
-          <div style="font-size: 0.8rem">
-            不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。<br />
-            （恐れ入りますが、振込手数料・引落手数料\330円(税込)は、お客様負担でお願い致します。）
-          </div>
           <div class="dis-flex" style="margin-top: 15px">
             <div
               style="
                 border: double black;
                 padding: 10px 0;
-                width: 100%;
+                width: 85%;
                 text-align: center;
               "
             >
               <div>
-                りそな銀行<span style="margin-left: 40px">渋谷支店</span>
+                初回お支払月(　　月分)に関しては保証会社様より新しい住所に
               </div>
               <div>普通口座　Ｎｏ.２６６９８０６</div>
               <div>
@@ -115,17 +129,17 @@
               </div>
             </div>
           </div>
-          <div style="margin: 20px 0">
+          <div style="margin: 20px 0" class="align-center">
             入居の際のご契約金で______月分の家賃まで頂いております。
           </div>
           <div>
-            引落は<strong style="font-size: 1.3rem">毎月1回、26日</strong
+            引落は<strong style="font-size: 1rem">毎月1回、27日</strong
             >(銀行休業日の場合は翌営業日)になります。
           </div>
           <div style="margin-right: 40px">
             ※口座へのご入金は、引落日の前営業日までにご入金ください。
           </div>
-          <div>&nbsp; &nbsp; 残高不足で自動引落しが出来なかった場合</div>
+          <div>残高不足で自動引落しが出来なかった場合</div>
           <div style="font-weight: 600; margin-bottom: 15px">
             &nbsp; &nbsp; &nbsp; →保証会社からの連絡をお待ち下さい。
           </div>
@@ -142,53 +156,45 @@
           </div>
           <div class="dis-flex justify-between" style="margin-bottom: 15px">
             <div class="dis-flex">
+              <label for="received-contract-status" class="font-weight-bold">
+                契約書受領しました
+              </label>
               <div>
                 <input
                   type="checkbox"
                   id="received-contracts"
                   name="receivedContract"
                   value="receivedContract"
-                  class="checkbox-custom m-t-7"
+                  class="checkbox-custom m-t-7 m-l-15"
                 />
               </div>
-              <label for="received-contract-status" class="font-weight-bold"
-                >契約書受領しました</label
-              >
             </div>
             <div class="dis-flex">
               ・　
+              <label for="receive-contract-later" class="font-weight-bold">
+                契約書郵送にて後日受け取ります
+              </label>
               <div>
                 <input
                   type="checkbox"
                   id="receive-contract-later"
                   name="receiveContractLater"
                   value="receiveContractLater"
-                  class="checkbox-custom m-t-7"
+                  class="checkbox-custom m-t-7 m-l-15"
                 />
               </div>
-              <label for="receive-contract-later" class="font-weight-bold"
-                >契約書郵送にて後日受け取ります</label
-              >
             </div>
           </div>
           <div class="dis-flex justify-center" style="margin-bottom: 50px">
             <strong style="margin-right: 15px">家賃は</strong>
             <div class="dis-flex">
-              <div>
-                <input
-                  type="checkbox"
-                  id="web-app"
-                  name="webApp"
-                  value="webApp"
-                  class="checkbox-custom m-t-7"
-                />
-              </div>
               <label
                 for="web-app"
                 class="font-weight-bold"
                 style="margin: 0 15px 0 3px"
-                >保証委託契約書</label
               >
+                保証委託契約書
+              </label>
             </div>
             <div class="dis-flex">
               <div>
@@ -204,10 +210,11 @@
                 for="monthly-transfer"
                 class="font-weight-bold"
                 style="margin-left: 15px"
-                >毎月振込 &nbsp; &nbsp; にて登録致しました。</label
+                >にて登録致しました。</label
               >
             </div>
           </div>
+          <hr class="dotted-hr" />
           <div>上記内容に了承致しました。</div>
           <div class="date-time">
             <p>年　　　　　月　　　　　日</p>
@@ -225,72 +232,74 @@
           </div>
         </div>
       </div>
-      <div class="dis-flex justify-end">株式会社アンビション DX ホールディングス</div>
+      <div class="dis-flex justify-end">
+        株式会社ＡＭＢＩＴＩＯＮ
+      </div>
     </div>
     <!-- Right page -->
     <div id="right-page">
       <div class="dis-flex flex-between header">
         <div style="margin-left: 10%">保証会社：JID</div>
-        <div style="margin-right: 10%">担当：　　　　　検印：</div>
+        <div style="margin-right: 7%">担当：　　　　　検印：</div>
       </div>
-      <h1 class="title">重　要　な　お　知　ら　せ</h1>
+      <h2 class="title">重　要　な　お　知　ら　せ</h2>
       <h2 class="align-center">家賃振込み・自動引落しに関するご注意</h2>
-      <div style="font-size: 1.5rem" class="align-center">
-        お客様の初回引落開始予定日は<span>__________日</span>
+      <div style="height: 100px">
+        <div
+          style="font-size: 1.1rem; margin: 40px 0 15px 0"
+          class="align-center font-weight-bold"
+        >
+          入居の際のご契約金で______月分の家賃まで頂いております。
+        </div>
       </div>
-      <div style="font-size: 1.2rem; margin: 0 5% 15px" class="align-right">
-        （<span>_____月分</span>）になります。
+      <div style="font-size: 1rem" class="align-center">
+        今回お客様から弊社にお振込みいただく分はございません。
       </div>
-      <div class="align-center">
-        <strong style="font-size: 1.3rem;">(<span style="margin-right: 60px"></span>)
-          に関しましては、保証会社様より新しい住所へ<br />
-          コンビニ払い用紙が届きます。そちらの内容をご確認ください。
-        </strong>
+      <div style="font-size: 0.8rem; margin-left: 160px;">
+        ※引き落とし月は予定になります。
+      </div>
+      <div style="font-size: 0.8rem" class="align-center">
+        不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。
       </div>
       <div class="dis-flex" style="justify-content: center">
         <div>
-          <div style="font-size: 0.8rem; margin: 10px 0 0 80px">
-            ※引き落とし月は予定になります。
-          </div>
-          <div style="font-size: 0.8rem">
-            不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。<br />
-            （恐れ入りますが、振込手数料・引落手数料\330円(税込)は、お客様負担でお願い致します。）
-          </div>
-          <div class="dis-flex" style="margin-top: 20px">
+          <div class="dis-flex" style="margin-top: 15px">
             <div
               style="
                 border: double black;
                 padding: 10px 0;
-                width: 100%;
+                width: 85%;
                 text-align: center;
               "
             >
               <div>
                 りそな銀行<span style="margin-left: 40px">渋谷支店</span>
               </div>
-              <div>普通口座　Ｎｏ.２６６９８０６</div>
+              <div>
+                初回お支払月(　　月分)に関しては保証会社様より新しい住所に<br />
+                はがきにてご案内が届きますのでご確認ください。
               <div>
                 口座名<span style="margin-left: 50px">カ)アンビション</span>
               </div>
             </div>
           </div>
-          <div style="margin: 20px 0">
+          <div style="margin: 20px 0" class="align-center">
             入居の際のご契約金で______月分の家賃まで頂いております。
           </div>
           <div>
-            引落は<strong style="font-size: 1.3rem">毎月1回、26日</strong
+            引落は<strong style="font-size: 1.2rem">毎月1回、27日</strong
             >(銀行休業日の場合は翌営業日)になります。
           </div>
           <div style="margin-right: 40px">
             ※口座へのご入金は、引落日の前営業日までにご入金ください。
           </div>
-          <div>&nbsp; &nbsp; 残高不足で自動引落しが出来なかった場合</div>
+          <div>残高不足で自動引落しが出来なかった場合</div>
           <div style="font-weight: 600; margin-bottom: 15px">
             &nbsp; &nbsp; &nbsp; →保証会社からの連絡をお待ち下さい。
           </div>
           <div style="margin-bottom: 15px">
             &nbsp; &nbsp;
-            後日ご自分のお口座へご入金されても再度の引落はございません。
+            ※ 書類の記載内容の相違・印鑑相違・印鑑不鮮明等の不備がある場合は
           </div>
           <div>
             ※ 書類の記載内容の相違・印鑑相違・印鑑不鮮明等の不備がある場合は
@@ -301,53 +310,45 @@
           </div>
           <div class="dis-flex justify-between" style="margin-bottom: 15px">
             <div class="dis-flex">
+              <label for="received-contract-status" class="font-weight-bold">
+                契約書受領しました
+              </label>
               <div>
                 <input
                   type="checkbox"
                   id="received-contracts"
                   name="receivedContract"
                   value="receivedContract"
-                  class="checkbox-custom m-t-7"
+                  class="checkbox-custom m-t-7 m-l-15"
                 />
               </div>
-              <label for="received-contract-status" class="font-weight-bold"
-                >契約書受領しました</label
-              >
             </div>
             <div class="dis-flex">
               ・　
+              <label for="receive-contract-later" class="font-weight-bold">
+                契約書郵送にて後日受け取ります
+              </label>
               <div>
                 <input
                   type="checkbox"
                   id="receive-contract-later"
                   name="receiveContractLater"
                   value="receiveContractLater"
-                  class="checkbox-custom m-t-7"
+                  class="checkbox-custom m-t-7 m-l-15"
                 />
               </div>
-              <label for="receive-contract-later" class="font-weight-bold"
-                >契約書郵送にて後日受け取ります</label
-              >
             </div>
           </div>
           <div class="dis-flex justify-center" style="margin-bottom: 50px">
             <strong style="margin-right: 15px">家賃は</strong>
             <div class="dis-flex">
-              <div>
-                <input
-                  type="checkbox"
-                  id="web-app"
-                  name="webApp"
-                  value="webApp"
-                  class="checkbox-custom m-t-7"
-                />
-              </div>
               <label
                 for="web-app"
                 class="font-weight-bold"
                 style="margin: 0 15px 0 3px"
-                >保証委託契約書</label
               >
+                保証委託契約書
+              </label>
             </div>
             <div class="dis-flex">
               <div>
@@ -363,10 +364,11 @@
                 for="monthly-transfer"
                 class="font-weight-bold"
                 style="margin-left: 15px"
-                >毎月振込 &nbsp; &nbsp; にて登録致しました。</label
+                >にて登録致しました。</label
               >
             </div>
           </div>
+          <hr class="dotted-hr" />
           <div>上記内容に了承致しました。</div>
           <div class="date-time">
             <p>年　　　　　月　　　　　日</p>
@@ -384,7 +386,9 @@
           </div>
         </div>
       </div>
-      <div class="dis-flex justify-end">株式会社ＡＭＢＩＴＩＯＮ</div>
+      <div class="dis-flex justify-end">
+        株式会社ＡＭＢＩＴＩＯＮ
+      </div>
     </div>
   </body>
 </html>
