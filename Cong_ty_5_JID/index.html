@@ -8,7 +8,7 @@
     <style>
       .dis-flex {
         display: flex;
-        align-items: center;
+        flex-direction: row;
       }
       .flex-between {
         display: flex;
@@ -61,7 +61,9 @@
       .m-t-7 {
         margin-top: 7px;
       }
-      .m-l-15 { margin-left: 15px; }
+      .m-l-15 {
+        margin-left: 15px;
+      }
       .font-weight-bold {
         font-weight: bold;
       }
@@ -75,6 +77,7 @@
         border-top: 1px dotted #000;
         margin-bottom: -2px;
       }
+      .m-l-30 { margin-left: 30px; }
     </style>
   </head>
   <body class="dis-flex justify-center">
@@ -101,9 +104,9 @@
         </div>
       </div>
       <div style="font-size: 0.8rem" class="align-center">
-      （恐れ入りますが、振込手数料・振替手数料\500円(税別)は、お客様負担でお願い致します。）
+        （恐れ入りますが、振込手数料・振替手数料\500円(税別)は、お客様負担でお願い致します。）
       </div>
-      <div style="font-size: 0.8rem; margin-left: 100px;">
+      <div style="font-size: 0.8rem; margin-left: 100px">
         ※引き落とし月は予定になります。
       </div>
       <div style="font-size: 0.8rem" class="align-center">
@@ -232,9 +235,7 @@
           </div>
         </div>
       </div>
-      <div class="dis-flex justify-end">
-        株式会社ＡＭＢＩＴＩＯＮ
-      </div>
+      <div class="dis-flex justify-end">株式会社ＡＭＢＩＴＩＯＮ</div>
     </div>
     <!-- Right page -->
     <div id="right-page">
@@ -244,69 +245,63 @@
       </div>
       <h2 class="title">重　要　な　お　知　ら　せ</h2>
       <h2 class="align-center">家賃振込み・自動引落しに関するご注意</h2>
-      <div style="height: 100px">
+      <div
+        class="dis-flex justify-center"
+        style="height: 100px; align-items: center"
+      >
         <div
           style="font-size: 1.1rem; margin: 40px 0 15px 0"
           class="align-center font-weight-bold"
         >
-          入居の際のご契約金で　　　月分の家賃まで頂いております。
+          入居の際のご契約金で______月分の家賃まで頂いております。
         </div>
       </div>
-      <div style="font-size: 0.8rem" class="align-center">
-      （恐れ入りますが、振込手数料・振替手数料\500円(税別)は、お客様負担でお願い致します。）
+      <div style="font-size: 1.1rem; margin-top: 15px" class="align-center">
+        今回お客様から弊社にお振込みいただく分はございません。
       </div>
-      <div style="font-size: 0.8rem; margin-left: 100px;">
+      <div style="font-size: 0.8rem; margin-left: 100px">
         ※引き落とし月は予定になります。
       </div>
       <div style="font-size: 0.8rem" class="align-center">
         不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。
       </div>
-      <div class="dis-flex" style="justify-content: center">
+      <div class="dis-flex justify-center">
         <div>
-          <div class="dis-flex" style="margin-top: 15px">
-            <div
-              style="
-                border: double black;
-                padding: 10px 0;
-                width: 85%;
-                text-align: center;
-              "
-            >
-              <div>
-                りそな銀行<span style="margin-left: 40px">渋谷支店</span>
-              </div>
-              <div>普通口座　Ｎｏ.２６６９８０６</div>
-              <div>
-                口座名<span style="margin-left: 50px">カ)アンビション</span>
+          <div class="dis-flex justify-center" style="margin-top: 15px">
+            <div style="text-align: center">
+              <h4>
+                初回お支払月(　　月分)に関しては保証会社様より新しい住所に
+                <br />
+                はがきにてご案内が届きますのでご確認ください。
+              </h4>
+              <div style="font-size: 0.8rem; margin-top: -15px">
+                （恐れ入りますが、振込手数料・振替手数料\500円(税別)は、お客様負担でお願い致します。）
               </div>
             </div>
           </div>
-          <div style="margin: 20px 0" class="align-center">
-            入居の際のご契約金で______月分の家賃まで頂いております。
-          </div>
-          <div>
-            引落は<strong style="font-size: 1rem">毎月1回、27日</strong
+          <div style="margin-top: 65px;" class="m-l-30">
+            引落は<strong style="font-size: 1.2rem">毎月1回、27日</strong
             >(銀行休業日の場合は翌営業日)になります。
           </div>
-          <div style="margin-right: 40px">
+          <div style="margin-right: 40px" class="m-l-30">
             ※口座へのご入金は、引落日の前営業日までにご入金ください。
           </div>
-          <div>残高不足で自動引落しが出来なかった場合</div>
-          <div style="font-weight: 600; margin-bottom: 15px">
+          <div class="m-l-30">残高不足で自動引落しが出来なかった場合</div>
+          <div class="m-l-30" style="font-weight: 600; margin-bottom: 15px">
             &nbsp; &nbsp; &nbsp; →保証会社からの連絡をお待ち下さい。
           </div>
-          <div style="margin-bottom: 15px">
+          <div class="m-l-30" style="margin-bottom: 15px">
             &nbsp; &nbsp;
             後日ご自分のお口座へご入金されても再度の引落はございません。
           </div>
-          <div>
+          <div class="m-l-30">
             ※ 書類の記載内容の相違・印鑑相違・印鑑不鮮明等の不備がある場合は
           </div>
-          <div style="margin-bottom: 50px">
+          <div class="m-l-30" style="margin-bottom: 50px">
             &nbsp; &nbsp;
             引き落としされませんので再度お手続き頂く必要があります。
           </div>
-          <div class="dis-flex justify-between" style="margin-bottom: 15px">
+          <div class="dis-flex justify-between m-l-30" style="margin-bottom: 15px">
             <div class="dis-flex">
               <label for="received-contract-status" class="font-weight-bold">
                 契約書受領しました
@@ -337,7 +332,7 @@
               </div>
             </div>
           </div>
-          <div class="dis-flex justify-center" style="margin-bottom: 50px">
+          <div class="dis-flex justify-center m-l-30" style="margin-bottom: 50px">
             <strong style="margin-right: 15px">家賃は</strong>
             <div class="dis-flex">
               <label
@@ -384,9 +379,7 @@
           </div>
         </div>
       </div>
-      <div class="dis-flex justify-end">
-        株式会社ＡＭＢＩＴＩＯＮ
-      </div>
+      <div class="dis-flex justify-end">株式会社ＡＭＢＩＴＩＯＮ</div>
     </div>
   </body>
 </html>
