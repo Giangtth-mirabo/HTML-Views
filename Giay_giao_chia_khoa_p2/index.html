@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giay giao chia khoa P2</title>
+    <style>
+      body {
+        margin: 10px 40px 10px 40px;
+      }
+      .left-header {
+        font-size: 1.2rem;
+        border-bottom: 1px dotted black;
+        width: fit-content;
+      }
+      .right-header {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: flex-end;
+      }
+      #table-header,
+      #table-header td {
+        border: 1px dotted black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 5px;
+      }
+      .title {
+        text-align: center;
+      }
+      #second-table {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 5px;
+        text-align: center;
+      }
+      #second-table,
+      #second-table td {
+        border: 1px dotted black;
+        border-collapse: collapse;
+      }
+      .receipts-list-title,
+      .remarks-title {
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+      #receipts-table {
+        width: 100%;
+      }
+      #receipts-table,
+      #receipts-table td {
+        border: 1px dotted black;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      .checkbox-custom {
+        width: 10px;
+        height: 10px;
+      }
+      #remarks-table {
+        border: 1px dotted #000;
+        font-size: 0.9rem;
+        width: 100%;
+      }
+      #table-remarks-content {
+        width: 100%;
+      }
+      .dis-flex {
+        display: flex;
+        align-items: center;
+      }
+      .width-full {
+        width: 100%;
+      }
+      .flex-between {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .m-t-7 {
+        margin-top: 7px;
+      }
+      .m-l-5 {
+        margin-left: 5px;
+      }
+      .m-r-5 {
+        margin-right: 5px;
+      }
+      #company-list,
+      #company-list td {
+        border: 1px dotted black;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+      .year-month-text {
+        font-size: 1.1rem;
+        text-align: right;
+        margin-top: 20px;
+      }
+      hr.dotted-hr {
+        border-top: 1px dotted #000;
+        margin-top: 2px;
+      }
+      #final-table {
+        width: 50%;
+        text-align: center;
+      }
+      #final-table,
+      #final-table td,
+      #final-table-1,
+      #final-table-1 td,
+      #final-table-2,
+      #final-table-2 td {
+        border: 1px dotted black;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page 1 -->
+    <div class="right-header">
+      <table id="table-header">
+        <tr>
+          <td>物件No.</td>
+          <td>0000001575</td>
+          <td>801</td>
+          <td>000000057070</td>
+        </tr>
+      </table>
+    </div>
+    <div class="left-header">
+      賃貸人　御中
+    </div>
+    <div class="title">
+      <h1>鍵 受 領 証(複製)</h1>
+    </div>
+    <table id="second-table">
+      <tr>
+        <td>所　在　地</td>
+        <td>神奈川県横浜市南区日枝町4丁目125</td>
+      </tr>
+      <tr>
+        <td>名　　　称</td>
+        <td>ラフィスタ横浜吉野町Ⅱ</td>
+      </tr>
+      <tr>
+        <td>部 屋 番 号</td>
+        <td>801号室</td>
+      </tr>
+      <tr>
+        <td>契　約　者</td>
+        <td>LI　JIAZE</td>
+      </tr>
+      <tr>
+        <td>契 約 開 始 日</td>
+        <td></td>
+      </tr>
+    </table>
+    <div>
+      <div class="receipts-list-title">【受領物一覧】</div>
+      <div>
+        <table id="receipts-table">
+          <tr>
+            <td style="width: 7%;">1</td>
+            <td>AL兼ルームキー下</td>
+            <td>W0608NX6HJQ</td>
+            <td style="width: 10%;">1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>ルームキー上</td>
+            <td>W86008NJA</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="remarks-content">
+      <div class="remarks-title">【備考】</div>
+      <table id="remarks-table">
+        <tr>
+          <td>メールボックス開錠方法</td>
+          <td style="text-align: center">C679</td>
+        </tr>
+        <tr>
+          <td>宅配ボックス開錠方法</td>
+          <td style="text-align: center">業者指定の任意の番号</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div style="margin-top: 20px;">・紛失時の賃借人負担額</div>
+            <table id="table-remarks-content">
+              <tr>
+                <td class="dis-flex">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="keyExchangeGen"
+                      name="keyExchangeGen"
+                      value="keyExchangeGen"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <label for="keyExchangeGen" class="m-l-5">鍵交換代</label>
+                </td>
+                <td>33,000円</td>
+                <td class="dis-flex">
+                  <div class="dis-flex">
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="cardKey"
+                        name="cardKey"
+                        value="cardKey"
+                        class="checkbox-custom m-t-7"
+                      />
+                    </div>
+                    <label for="cardKey" class="m-l-5">カードキー</label>
+                  </div>
+                  <div style="margin-left: 30px">16,500円</div>
+                  <div class="dis-flex" style="margin-left: 10px">
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="chipKey"
+                        name="chipKey"
+                        value="chipKey"
+                        class="checkbox-custom m-t-7"
+                      />
+                    </div>
+                    <label for="chipKey">チップキー</label>
+                  </div>
+                  <div style="margin-left: 40px">16,500円</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="dis-flex">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="deliveryBoxCard"
+                      name="deliveryBoxCard"
+                      value="deliveryBoxCard"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <label for="deliveryBoxCard" class="m-l-5"
+                    >宅配ボックスカード</label
+                  >
+                </td>
+                <td>5,500円</td>
+                <td class="dis-flex">
+                  <div class="dis-flex">
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="lightingRemoteCtrl"
+                        name="lightingRemoteCtrl"
+                        value="lightingRemoteCtrl"
+                        class="checkbox-custom m-t-7"
+                      />
+                    </div>
+                    <label for="lightingRemoteCtrl" class="m-l-5"
+                      >照明リモコン</label
+                    >
+                  </div>
+                  <div style="margin-left: 40px">5,500円</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="dis-flex">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="userManual"
+                      name="userManual"
+                      value="userManual"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <label for="userManual" class="m-l-5">取扱説明書</label>
+                </td>
+                <td>16,500円</td>
+                <td class="dis-flex">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="airConditioneRemoteCtrl"
+                      name="airConditioneRemoteCtrl"
+                      value="airConditioneRemoteCtrl"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <label for="airConditioneRemoteCtrl" class="m-l-5"
+                    >エアコンリモコン</label
+                  >
+                  <div style="margin-left: 50px">16,500円</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div style="font-size: 1rem">
+      ※家賃発生日前の入室が発覚した際は、日割り家賃等損害賠償を請求する場合が<br />
+      　ございますので予めご了承下さい。
+    </div>
+    <div style="font-size: 0.9rem;">
+      ※インターネット配電盤、駐輪場、駐車場等の共用部については下記 <br />
+      　共用管理会社へご連絡お願い致します。
+    </div>
+    <table id="company-list" class="width-full">
+      <tr>
+        <td>共用管理会社名</td>
+        <td>株式会社ＳＴＡＲ合人社</td>
+      </tr>
+      <tr>
+        <td style="width: 35%;">共用管理会社名電話番号</td>
+        <td>03-5201-3383</td>
+      </tr>
+    </table>
+    <div class="year-month-text">年　　　月　　　　日</div>
+    <div style="font-size: 0.9rem; margin-top: 10px;">
+      　契約に伴い、契約内容を理解したうえで、上記の通り受領いたしました。
+    </div>
+    <div style="font-size: 0.9rem">
+      退室時には速やかにご返却するとともに、紛失及び破損の場合は実費を負担いたします。
+    </div>
+    <div class="dis-flex flex-between" style="margin-top: 25px">
+      <div>氏名（社名）</div>
+      <div style="margin-right: 100px">㊞</div>
+    </div>
+    <hr class="dotted-hr" />
+    <div style="margin-top: 20px; justify-content: flex-end" class="dis-flex">
+      <table id="final-table">
+        <tr>
+          <td>引渡担当</td>
+          <td>検　印</td>
+          <td>入金</td>
+          <td>作成</td>
+        </tr>
+        <tr style="height: 80px">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
