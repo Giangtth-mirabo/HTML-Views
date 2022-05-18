@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giay giao chia khoa</title>
+    <title>Giay giao chia khoa (Co parking lot)</title>
     <style>
       body {
         margin: 10px 30px 10px 20px;
@@ -135,7 +135,9 @@
         border-collapse: collapse;
         font-size: 0.9rem;
       }
-      .mt-70 { margin-top: 70px; }
+      .mt-70 {
+        margin-top: 70px;
+      }
     </style>
   </head>
   <body>
@@ -190,16 +192,16 @@
       <div>
         <table id="receipts-table">
           <tr>
-            <td style="width: 10%;">1</td>
+            <td>1</td>
             <td style="width: 35%;"></td>
             <td style="width: 40%;"></td>
             <td></td>
             <td style="width: 10px">
               <input
                 type="checkbox"
-                id="row1-page1"
-                name="row1-page1"
-                value="row1-page1"
+                id="row1-page2"
+                name="row1-page2"
+                value="row1-page2"
                 class="checkbox-custom"
               />
             </td>
@@ -212,9 +214,9 @@
             <td style="width: 10px">
               <input
                 type="checkbox"
-                id="row2-page1"
-                name="row2-page1"
-                value="row2-page1"
+                id="row2-page2"
+                name="row2-page2"
+                value="row2-page2"
                 class="checkbox-custom"
               />
             </td>
@@ -227,9 +229,9 @@
             <td style="width: 10px">
               <input
                 type="checkbox"
-                id="row3-page1"
-                name="row3-page1"
-                value="row3-page1"
+                id="row3-page2"
+                name="row3-page2"
+                value="row3-page2"
                 class="checkbox-custom"
               />
             </td>
@@ -242,9 +244,9 @@
             <td style="width: 10px">
               <input
                 type="checkbox"
-                id="row4-page1"
-                name="row4-page1"
-                value="row4-page1"
+                id="row4-page2"
+                name="row4-page2"
+                value="row4-page2"
                 class="checkbox-custom"
               />
             </td>
@@ -252,7 +254,7 @@
         </table>
       </div>
     </div>
-    <div class="remarks-content">
+    <div class="remarks-content mt-70">
       <div class="remarks-title">【備考】</div>
       <table id="remarks-table">
         <tr>
@@ -272,13 +274,13 @@
                   <div>
                     <input
                       type="checkbox"
-                      id="keyExchangeGen"
-                      name="keyExchangeGen"
-                      value="keyExchangeGen"
+                      id="keyExchangeGen-p2"
+                      name="keyExchangeGen-p2"
+                      value="keyExchangeGen-p2"
                       class="checkbox-custom m-t-7"
                     />
                   </div>
-                  <label for="keyExchangeGen" class="m-l-5">鍵交換代</label>
+                  <label for="keyExchangeGen-p2" class="m-l-5">鍵交換代</label>
                 </td>
                 <td>33,000円</td>
                 <td class="dis-flex">
@@ -286,26 +288,26 @@
                     <div>
                       <input
                         type="checkbox"
-                        id="cardKey"
-                        name="cardKey"
-                        value="cardKey"
+                        id="cardKey-p2"
+                        name="cardKey-p2"
+                        value="cardKey-p2"
                         class="checkbox-custom m-t-7"
                       />
                     </div>
-                    <label for="cardKey" class="m-l-5">カードキー</label>
+                    <label for="cardKey-p2" class="m-l-5">カードキー</label>
                   </div>
                   <div style="margin-left: 30px">16,500円</div>
                   <div class="dis-flex" style="margin-left: 10px">
                     <div>
                       <input
                         type="checkbox"
-                        id="chipKey"
-                        name="chipKey"
-                        value="chipKey"
+                        id="chipKey-p2"
+                        name="chipKey-p2"
+                        value="chipKey-p2"
                         class="checkbox-custom m-t-7"
                       />
                     </div>
-                    <label for="chipKey">チップキー</label>
+                    <label for="chipKey-p2">チップキー</label>
                   </div>
                   <div style="margin-left: 40px">16,500円</div>
                 </td>
@@ -315,13 +317,13 @@
                   <div>
                     <input
                       type="checkbox"
-                      id="deliveryBoxCard"
-                      name="deliveryBoxCard"
-                      value="deliveryBoxCard"
+                      id="deliveryBoxCard-p2"
+                      name="deliveryBoxCard-p2"
+                      value="deliveryBoxCard-p2"
                       class="checkbox-custom m-t-7"
                     />
                   </div>
-                  <label for="deliveryBoxCard" class="m-l-5"
+                  <label for="deliveryBoxCard-p2" class="m-l-5"
                     >宅配ボックスカード</label
                   >
                 </td>
@@ -331,13 +333,13 @@
                     <div>
                       <input
                         type="checkbox"
-                        id="lightingRemoteCtrl"
-                        name="lightingRemoteCtrl"
-                        value="lightingRemoteCtrl"
+                        id="lightingRemoteCtrl-p2"
+                        name="lightingRemoteCtrl-p2"
+                        value="lightingRemoteCtrl-p2"
                         class="checkbox-custom m-t-7"
                       />
                     </div>
-                    <label for="lightingRemoteCtrl" class="m-l-5"
+                    <label for="lightingRemoteCtrl-p2" class="m-l-5"
                       >照明リモコン</label
                     >
                   </div>
@@ -349,7 +351,7 @@
                   <div>
                     <input
                       type="checkbox"
-                      id="userManual"
+                      id="userManual-p2"
                       name="userManual"
                       value="userManual"
                       class="checkbox-custom m-t-7"
@@ -362,16 +364,85 @@
                   <div>
                     <input
                       type="checkbox"
-                      id="airConditioneRemoteCtrl"
-                      name="airConditioneRemoteCtrl"
-                      value="airConditioneRemoteCtrl"
+                      id="airConditioneRemoteCtrl-p2"
+                      name="airConditioneRemoteCtrl-p2"
+                      value="airConditioneRemoteCtrl-p2"
                       class="checkbox-custom m-t-7"
                     />
                   </div>
-                  <label for="airConditioneRemoteCtrl" class="m-l-5"
+                  <label for="airConditioneRemoteCtrl-p2" class="m-l-5"
                     >エアコンリモコン</label
                   >
                   <div style="margin-left: 50px">16,500円</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>・共用部</div>
+            <table style="width: 100%">
+              <tr class="dis-flex">
+                <td class="dis-flex" style="width: 25%">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="bicycleParkingLot"
+                      name="bicycleParkingLot"
+                      value="bicycleParkingLot"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <label for="bicycleParkingLot" class="m-l-5">駐輪場</label>
+                  <div class="dis-flex">
+                    <div>
+                      (<input
+                        type="checkbox"
+                        id="sticker"
+                        name="sticker"
+                        value="sticker"
+                        class="checkbox-custom m-t-7"
+                      />
+                    </div>
+                    <label for="sticker">ステッカー)</label>
+                  </div>
+                </td>
+                <td class="dis-flex" style="width: 20%">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="parking"
+                      name="parking"
+                      value="parking"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <label for="parking" class="m-l-5 m-r-5">駐車場</label>
+                  <div class="dis-flex">
+                    <div>
+                      (<input
+                        type="checkbox"
+                        id="mechanicalKey"
+                        name="mechanicalKey"
+                        value="mechanicalKey"
+                        class="checkbox-custom m-t-7"
+                      />
+                    </div>
+                    <label for="mechanicalKey">機械式鍵)</label>
+                  </div>
+                </td>
+                <td class="dis-flex">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="bikeYard"
+                      name="bikeYard"
+                      value="bikeYard"
+                      class="checkbox-custom m-t-7"
+                    />
+                  </div>
+                  <label for="bikeYard" class="m-l-5 m-r-5">バイク置場</label>
                 </td>
               </tr>
             </table>
@@ -412,16 +483,28 @@
     <hr class="dotted-hr" />
     <div style="margin-top: 25px">契約者携帯番号</div>
     <hr class="dotted-hr" />
-    <div style="margin-top: 20px; justify-content: flex-end" class="dis-flex">
-      <table id="final-table">
+    <div
+      class="dis-flex"
+      style="margin-top: 20px; justify-content: space-between"
+    >
+      <table id="final-table-1">
         <tr>
-          <td>引渡担当</td>
-          <td>検　印</td>
-          <td>保　険</td>
-          <td>入　金</td>
-          <td>作　成</td>
+          <td>共用部入金</td>
         </tr>
         <tr style="height: 80px">
+          <td></td>
+        </tr>
+      </table>
+      <table id="final-table-2">
+        <tr>
+          <td style="width: 15%">引渡担当</td>
+          <td style="width: 15%">検　印</td>
+          <td style="width: 15%">保　険</td>
+          <td colspan="2" style="width: 30%">入　金</td>
+          <td style="width: 15%">作　成</td>
+        </tr>
+        <tr style="height: 80px">
+          <td></td>
           <td></td>
           <td></td>
           <td></td>
