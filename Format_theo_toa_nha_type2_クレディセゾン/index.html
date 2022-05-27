@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Format_theo_toa_nha_type2_クレディセゾン</title>
+  <style>
+    body {
+      margin: 10px 30px 10px 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
+
+    #table-header,
+    #table-header td {
+      border: 1px dotted black;
+      border-collapse: collapse;
+      text-align: center;
+      padding: 5px;
+    }
+
+    #table-top,
+    #table-top td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .title1 {
+      background: #3f3f3f;
+      color: white;
+    }
+
+    .info-building {
+      margin: 20px 15%;
+      border: 4px double;
+      height: auto;
+      min-height: 120px;
+    }
+
+    .date-time {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .sign {
+      width: 100%;
+    }
+
+    .sign__info {
+      width: 70%;
+      border-bottom: 1px solid black;
+    }
+
+    .width60 {
+      width: 60%;
+    }
+
+    .width80 {
+      width: 80%;
+    }
+
+    .fs-20 {
+      font-size: 20px;
+    }
+
+    .fs-24 {
+      font-size: 24px;
+    }
+
+    .fs-14 {
+      font-size: 14px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .dis-flex {
+      display: flex;
+      align-items: center;
+    }
+
+    .width-full {
+      width: 100%;
+    }
+
+    .flex-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .justify-around {
+      justify-content: space-around;
+    }
+
+    .justify-end {
+      justify-content: flex-end;
+    }
+
+    .mt-15 {
+      margin-top: 15px;
+    }
+
+    .mt-20 {
+      margin-top: 20px;
+    }
+
+    .mt-40 {
+      margin-top: 40px;
+    }
+
+    .dotted {
+      border-top: 1px dotted;
+    }
+
+    .font-weight-bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <table id="table-top">
+      <tr>
+        <td class="fs-20 font-weight-bold" style="padding: 2px; width: 100px">
+          検印
+        </td>
+      </tr>
+      <tr>
+        <td class="fs-20 font-weight-bold" style="padding: 2px; height: 80px"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="title title1 fs-24 font-weight-bold">
+    重　要　な　お　知　ら　せ
+  </div>
+  <div class="title fs-24 font-weight-bold" style="margin: 20px 0 30px">
+    家賃振込み・自動引落しに関するご注意
+  </div>
+  <div class="title">
+    <div class="fs-20">
+      お客様の初回引落開始予定日は _____
+      <span class="font-weight-bold">月</span>_____
+      <span class="font-weight-bold">日</span>
+    </div>
+    <div class="fs-20 font-weight-bold" style="margin-left: 45%">
+      _____月分になります
+    </div>
+  </div>
+  <div class="title fs-14" style="margin: 40px 0 25px">
+    ※引き落とし月は予定になります。
+    <br />
+    不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。
+  </div>
+  <div class="info-building center fs-20 font-weight-bold">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="center fs-20" style="margin-bottom: 10px">
+    入居の際のご契約金で _____月分の家賃まで頂いております。
+  </div>
+  <div class="center fs-20">
+    引落は毎月1回、____日(銀行休業日の場合は翌営業日)になります。
+  </div>
+  <div class="center fs-20 mt-20">残高不足で自動引落しが出来なかった場合</div>
+  <div class="center fs-20 font-weight-bold">
+    →保証会社からの連絡をお待ち下さい。
+  </div>
+  <div class="center mt-20">
+    <p class="fs-20">
+      後日ご自分のお口座へご入金されても再度の引落はございません。
+    </p>
+  </div>
+  <div class="center mt-20">
+    <div class="fs-14">
+      ※ 書類の記載内容の相違・印鑑相違・印鑑不鮮明等の不備がある場合は
+      <br />
+      引き落としされませんので再度お手続き頂く必要があります。
+    </div>
+  </div>
+  <div class="mt-40 dis-flex justify-around font-weight-bold fs-20">
+    <div class="dis-flex">
+      <div for="received" style="margin-right: 10px">契約書受領しました</div>
+      <input type="checkbox" id="received" name="received" value="value1" />
+    </div>
+    <div class="dis-flex">
+      <div for="receive-later" style="margin-right: 10px">
+        契約書郵送にて後日受け取ります
+      </div>
+      <input type="checkbox" id="receive-later" name="receive-later" value="value2" />
+    </div>
+  </div>
+  <div class="dis-flex font-weight-bold fs-20 justify-center mt-20">
+    <div for="account-registed" style="margin-right: 10px">
+      引落し口座はWEBにて登録致しました
+    </div>
+    <input type="checkbox" id="account-registed" name="account-registed" value="value2" />
+  </div>
+  <div class="dis-flex font-weight-bold fs-20 justify-center mt-20">
+    <div for="register-later" style="margin-right: 10px">
+      引落し口座はWEBにてこれから登録致します
+    </div>
+    <input type="checkbox" id="register-later" name="register-later" value="value2" />
+  </div>
+  <div class="fs-14 font-weight-bold center">※仲介業者様より頂いている クレディセゾン お客様控えよりご登録をお願い致します</div>
+  <div class="mt-20 dotted">
+    <div class="fs-20 dis-flex justify-center width60" style="margin-left: 30px">
+      上記内容に了承致しました。
+    </div>
+  </div>
+  <div class="date-time" style="margin-right: 100px">
+    <p class="fs-20">年　　　月　　　日</p>
+  </div>
+  <div class="sign dis-flex justify-center">
+    <div class="width80 dis-flex justify-center mt-20">
+      <div class="sign__info dis-flex">
+        <div class="fs-20">氏　名</div>
+        &nbsp; &nbsp; &nbsp;
+        <div class="fs-20"></div>
+      </div>
+      <div>
+        <div>印</div>
+      </div>
+    </div>
+  </div>
+  <div class="dis-flex justify-end mt-20 fs-20">
+    株式会社アンビション DX ホールディングス
+  </div>
+</body>
+
+</html>
