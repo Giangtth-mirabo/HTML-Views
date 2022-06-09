@@ -35,7 +35,7 @@
         font-size: 14px;
       }
       .color-title {
-        color: #1e3932;
+        color:  #1e3932;
         font-weight: 700;
         line-height: 30px;
       }
@@ -232,11 +232,7 @@
         font-size: 18px;
         text-align: center;
       }
-      .description-confirm {
-        color: #3a3a3a;
-        text-align: center;
-        font-size: 13px;
-      }
+      .grey__1 { color: #3A3A3A; }
     </style>
   </head>
   <body>
@@ -260,72 +256,52 @@
             <div>
               <div class="dis-flex row-contract py-1 my-2 px-2">
                 <div class="font-weight-bold" style="width: 70px">保証会社</div>
-                <div>{{ company_name || "ジェイリース" }}</div>
+                <div>{{ company_name || "ルームギャランティ" }}</div>
               </div>
               <div class="dis-flex row-contract py-1 my-2 px-2 font-weight-bold">
                 <div style="width: 70%">担当</div>
                 <div>検印</div>
               </div>
-              <div class="my-4">
-                <div class="font-weight-bold">お客様の初回引落開始予定日は ___月___日 （ ___月分）になります。 </div>
+              <div class="mt-4">
+                <div class="font-weight-bold mb-2">入居の際のご契約金で____月分の家賃まで頂いております。</div>
+                <div>今回お客様から弊社にお振込みいただく分はございません。</div>
                 <div class="mt-2 mb-2">※引き落とし月は予定になります。</div>
                 <div>
-                  不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。（恐れ入りますが、振込手数料・引落手数料¥330円(税込)は、お客様負担でお願い致します。）
-                </div>
-                <br />
-                <div class="row-contract px-4 py-2 font-weight-bold">
-                  <div class="dis-flex pb-2">
-                    <div>銀行名</div>
-                    <div style="margin-left: auto">りそな銀行</div>
-                  </div>
-                  <div class="dis-flex pb-2">
-                    <div>支店名</div>
-                    <div style="margin-left: auto">渋谷支店</div>
-                  </div>
-                  <div class="dis-flex pb-2">
-                    <div>普通口座</div>
-                    <div style="margin-left: auto">Ｎｏ.２６６９８０６</div>
-                  </div>
-                  <div class="dis-flex">
-                    <div>口座名</div>
-                    <div style="margin-left: auto">カ)アンビション</div>
-                  </div>
+                  不備などがあった場合引き落とし月が替わる可能性がございます。予めご了承ください。
                 </div>
               </div>
+              <div class="py-2" style="line-height: 20px;"> 毎月のお支払に関しては保証会社様より新しい住所にはがきにて案内が届きますのでご確認ください。</div>
+              <div>（恐れ入りますが、振込手数料・振替手数料¥500円(税別)は、お客様負担でお願い致します。）</div>
               <div style="line-height: 20px;">
-                <div class="font-weight-bold pb-1">
-                  入居の際のご契約金で ___ 月分の家賃まで頂いております。
-                </div>
-                <div>
-                  引落は毎月1回、___日(銀行休業日の場合は翌営業日)になります。
+                <div class="pt-1">
+                  引落は毎月1回、____日(銀行休業日の場合は翌営業日)になります。
                 </div>
                 <div>
                   ※口座へのご入金は、引落日の前営業日までにご入金ください。
-                </div>
+                </div> 
                 <div>残高不足で自動引落しが出来なかった場合</div>
                 <div class="font-weight-bold"> →保証会社からの連絡をお待ち下さい。</div>
                 <div>
                   後日ご自分のお口座へご入金されても再度の引落はございません。
                 </div>
                 <div>
-                  ※ 書類の記載内容の相違・印鑑相違・印鑑不鮮明等の不備がある場合は 引き落としされませんので再度お手続き頂く必要があります。
+                  ※ 書類の記載内容の相違・印鑑相違・印鑑不鮮明等の不備がある場合は引き落としされませんので再度お手続き頂く必要があります。
                 </div>
-                <br />
-                <div>{{ received ? "契約書受領しました。" : "契約書郵送にて後日受け取ります。" }}</div>
+                 <div class="pt-5">{{ received ? "契約書受領しました。" : "契約書郵送にて後日受け取ります。" }}</div>
                 <div><b class="pr-1">家賃は</b> {{ "保証委託契約書にて登録致しました。" || "毎月振込にて登録致しました。"}}</div>
                 <br />
-                <div>上記内容に了承致しました。</div>
+                <div class="grey__1">上記内容に了承致しました。</div>
               </div>
-              <div style="text-align: right">
+              <div style="text-align: right" class="pt-5 pb-7">
                 {{ year }}______ 年 {{ month }}____ 月 {{ day }}____ 日
               </div>
-              <div class="dis-flex">
+              <div class="dis-flex font-weight-bold">
                 <div class="pr-7">氏名</div>
                 <div>{{ user_sign || "ホアン・ヴァン・クアン" }}</div>
               </div>
               <div class="dis-flex">
-                <div class="pr-7">社名</div>
-                <div>{{ company_sign || "株式会社アンビション DX ホールディングス" }}</div>
+                <div class="pr-7 font-weight-bold ">社名</div>
+                <div>{{ company_sign || "株式会社ＡＭＢＩＴＩＯＮ " }}</div>
               </div>
             </div>
           </v-container>
@@ -355,3 +331,4 @@
     </script>
   </body>
 </html>
+ 

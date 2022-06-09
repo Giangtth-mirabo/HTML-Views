@@ -232,11 +232,7 @@
         font-size: 18px;
         text-align: center;
       }
-      .description-confirm {
-        color: #3a3a3a;
-        text-align: center;
-        font-size: 13px;
-      }
+      .grey__1 { color: #3A3A3A; }
     </style>
   </head>
   <body>
@@ -254,18 +250,10 @@
                 <span class="title-contract-notifi">重要なお知らせ</span>
               </div>
               <div class="mb-7 title-description">
-                家賃振込み・自動引落しに関するご注意
+                家賃振込み・自動引落しに関するご注意           
               </div>
             </div>
             <div>
-              <div class="dis-flex row-contract py-1 my-2 px-2">
-                <div class="font-weight-bold" style="width: 70px">保証会社</div>
-                <div>{{ company_name || "クレディセゾン" }}</div>
-              </div>
-              <div class="dis-flex row-contract py-1 my-2 px-2 font-weight-bold">
-                <div style="width: 70%">担当</div>
-                <div>検印</div>
-              </div>
               <div class="my-4">
                 <div class="font-weight-bold">お客様の初回引落開始予定日は ___月 ___日 （ ___月分）になります。 </div>
                 <div class="mt-2 mb-2">※引き落とし月は予定になります。</div>
@@ -284,7 +272,7 @@
                   </div>
                   <div class="dis-flex pb-2">
                     <div>普通口座</div>
-                    <div style="margin-left: auto">Ｎｏ.２６６９８０６</div>
+                    <div style="margin-left: auto">Ｎｏ. 8 9 2 1 7 7 1</div>
                   </div>
                   <div class="dis-flex">
                     <div>口座名</div>
@@ -299,9 +287,6 @@
                 <div>
                   引落は毎月1回、___日(銀行休業日の場合は翌営業日)になります。
                 </div>
-                <div>
-                  ※口座へのご入金は、引落日の前営業日までにご入金ください。
-                </div>
                 <div>残高不足で自動引落しが出来なかった場合</div>
                 <div class="font-weight-bold"> →保証会社からの連絡をお待ち下さい。</div>
                 <div>
@@ -314,18 +299,18 @@
                 <div>{{ received ? "契約書受領しました。" : "契約書郵送にて後日受け取ります。" }}</div>
                 <div><b class="pr-1">家賃は</b> {{ "保証委託契約書にて登録致しました。" || "毎月振込にて登録致しました。"}}</div>
                 <br />
-                <div>上記内容に了承致しました。</div>
+                <div class="grey__1">上記内容に了承致しました。</div>
               </div>
-              <div style="text-align: right">
+              <div style="text-align: right" class="pt-5 pb-7">
                 {{ year }}______ 年 {{ month }}____ 月 {{ day }}____ 日
               </div>
-              <div class="dis-flex">
+              <div class="dis-flex font-weight-bold">
                 <div class="pr-7">氏名</div>
                 <div>{{ user_sign || "ホアン・ヴァン・クアン" }}</div>
               </div>
               <div class="dis-flex">
-                <div class="pr-7">社名</div>
-                <div>{{ company_sign || "株式会社ＡＭＢＩＴＩＯＮ" }}</div>
+                <div class="pr-7 font-weight-bold">社名</div>
+                <div>{{ company_sign || "株式会社アンビション DX ホールディングス " }}</div>
               </div>
             </div>
           </v-container>
@@ -343,7 +328,7 @@
         el: "#app",
         vuetify: new Vuetify(),
         data: () => ({
-          company_name: null,
+          building_name: null,
           received: false,
           year: null,
           month: null,
