@@ -258,10 +258,6 @@
                 <div class="font-weight-bold" style="width: 70px">保証会社</div>
                 <div>{{ company_name || "ルームギャランティ" }}</div>
               </div>
-              <div class="dis-flex row-contract py-1 my-2 px-2 font-weight-bold">
-                <div style="width: 70%">担当</div>
-                <div>検印</div>
-              </div>
               <div class="mt-4">
                 <div class="font-weight-bold mb-2">入居の際のご契約金で____月分の家賃まで頂いております。</div>
                 <div>今回お客様から弊社にお振込みいただく分はございません。</div>
@@ -299,10 +295,6 @@
                 <div class="pr-7">氏名</div>
                 <div>{{ user_sign || "ホアン・ヴァン・クアン" }}</div>
               </div>
-              <div class="dis-flex">
-                <div class="pr-7 font-weight-bold ">社名</div>
-                <div>{{ company_sign || "株式会社ＡＭＢＩＴＩＯＮ " }}</div>
-              </div>
             </div>
           </v-container>
         </v-main>
@@ -325,7 +317,6 @@
           month: null,
           day: null,
           user_sign: null,
-          company_sign: null
         })
       });
     </script>
