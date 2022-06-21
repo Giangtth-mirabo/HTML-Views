@@ -250,6 +250,14 @@
                 家賃振込み・自動引落しに関するご注意
               </div>
             </div>
+            <div class="dis-flex row-contract py-1 my-2 px-2">
+              <div class="font-weight-bold ml-2" style="width: 70px">保証会社</div>
+              <div>{{ company_name }}</div>
+            </div>
+            <div class="dis-flex row-contract py-1 my-2 px-2 font-weight-bold">
+              <div class="ml-3" style="width: 70px">物件名</div>
+              <div>{{ building_name }}</div>
+            </div>
             <div>
               <div class="my-4">
                 <div class="mt-2 mb-2">毎月月末までに下記の口座へお振込みをお願いいたします。</div>
@@ -259,19 +267,19 @@
                 <div class="row-contract mt-3 px-4 py-2 font-weight-bold">
                   <div class="dis-flex pb-2">
                     <div>銀行名</div>
-                    <div style="margin-left: auto">りそな銀行</div>
+                    <div style="margin-left: auto">{{ bank_name }}</div>
                   </div>
                   <div class="dis-flex pb-2">
                     <div>支店名</div>
-                    <div style="margin-left: auto">渋谷支店</div>
+                    <div style="margin-left: auto">{{ branch_name }}</div>
                   </div>
                   <div class="dis-flex pb-2">
                     <div>普通口座</div>
-                    <div style="margin-left: auto">Ｎｏ. 8 9 2 1 7 7 1</div>
+                    <div style="margin-left: auto">{{ account_number }}</div>
                   </div>
                   <div class="dis-flex">
                     <div>口座名</div>
-                    <div style="margin-left: auto">カ)アンビション</div>
+                    <div style="margin-left: auto">{{ account_name }}</div>
                   </div>
                 </div>
               </div>
@@ -291,10 +299,6 @@
               <div class="dis-flex font-weight-bold">
                 <div class="pr-7">氏名</div>
                 <div>{{ user_sign }}</div>
-              </div>
-              <div class="dis-flex">
-                <div class="pr-7 font-weight-bold">社名</div>
-                <div>{{ company_sign }}</div>
               </div>
             </div>
           </v-container>
