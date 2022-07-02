@@ -43,17 +43,36 @@
       align-items: center;
     }
 
+    .justify-between {
+      justify-content: space-between;
+    }
+
     .grey__1 {
       color: #3A3A3A;
     }
 
     .underline {
-      border-bottom: 1px solid;
+      border-bottom: 0.5px solid;
       padding-bottom: -12px;
     }
 
     .center {
       text-align: center;
+    }
+
+    li {
+      list-style-type: none;
+      margin-left: -15px;
+      line-height: 20px;
+    }
+
+    li:before {
+      content: "\00b7";
+      font-size: 55px;
+      margin-left: -10px;
+      line-height: 15px;
+      color: #6b6bf9;
+      vertical-align: text-top;
     }
   </style>
 </head>
@@ -67,106 +86,192 @@
             <div class="title-contract-notifi">鍵受領証</div>
           </div>
           <div>
-            <div class="mb-7">
+            <div class="pb-1">
               賃貸人　御中
             </div>
-            <div class="my-4">
-              <div class="row-contract px-4 py-2 font-weight-bold">
-                <div class="dis-flex pb-2">
+            <div class="mb-4">
+              <div class="row-contract px-3 py-2">
+                <div class="dis-flex pb-2 font-weight-bold">
                   <div>物件No.</div>
-                  <div style="margin-left: auto"></div>
+                  <div style="margin-left: auto">0000001575</div>
                 </div>
-                <div class="dis-flex pb-2">
+                <div class="dis-flex pb-2 font-weight-bold">
                   <div>部屋番号</div>
-                  <div style="margin-left: auto"></div>
+                  <div style="margin-left: auto">801</div>
+                </div>
+                <div class="dis-flex pb-2 font-weight-bold">
+                  <div>契約番号</div>
+                  <div style="margin-left: auto">000000057070</div>
                 </div>
                 <div class="dis-flex pb-2">
-                  <div>契約番号</div>
-                  <div style="margin-left: auto"></div>
+                  <div class="font-weight-bold">保証会社</div>
+                  <div style="margin-left: auto">株式会社ルームバンクインシュア</div>
                 </div>
                 <div class="dis-flex">
-                  <div>保証会社</div>
-                  <div style="margin-left: auto"></div>
-                </div>
-                <div class="dis-flex">
-                  <div>委託形態</div>
-                  <div style="margin-left: auto"></div>
+                  <div class="font-weight-bold">委託形態</div>
+                  <div style="margin-left: auto">満室保証</div>
                 </div>
               </div>
             </div>
             <div class="my-4">
-              <div class="row-contract px-4 py-2 font-weight-bold">
+              <div class="row-contract px-3 py-2">
                 <div class="dis-flex pb-2">
-                  <div>所在地</div>
-                  <div style="margin-left: auto"></div>
+                  <div class="font-weight-bold">所在地</div>
+                  <div style="margin-left: auto">神奈川県横浜市南区日枝町4丁目125</div>
                 </div>
                 <div class="dis-flex pb-2">
-                  <div>名称</div>
-                  <div style="margin-left: auto"></div>
+                  <div class="font-weight-bold">名称</div>
+                  <div style="margin-left: auto">ラフィスタ横浜吉野町Ⅱ</div>
                 </div>
                 <div class="dis-flex pb-2">
-                  <div>部屋番号</div>
-                  <div style="margin-left: auto"></div>
+                  <div class="font-weight-bold">部屋番号</div>
+                  <div style="margin-left: auto">801号室</div>
+                </div>
+                <div class="dis-flex pb-2">
+                  <div class="font-weight-bold">契約者</div>
+                  <div style="margin-left: auto">LI　JIAZE</div>
                 </div>
                 <div class="dis-flex">
-                  <div>契約者</div>
-                  <div style="margin-left: auto"></div>
+                  <div class="font-weight-bold">契約開始日</div>
+                  <div style="margin-left: auto">2022年2月26日</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <div class="font-weight-bold mb-2">
+                <ul class="font-weight-bold">
+                  <li>
+                    <span>【受領物一覧】</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-1 row-contract dis-flex justify-between px-3">
+                <div class="dis-flex">
+                  <div>
+                    <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Group 583">
+                        <g id="Group 582">
+                          <g id="Group 567">
+                            <circle id="Ellipse 100" cx="10.7393" cy="13.7393" r="10.2393" stroke="#6B6BF9" />
+                            <circle id="Ellipse 103" cx="21.479" cy="6.78269" r="6.28269" fill="#6B6BF9"
+                              stroke="#F5F7F9" />
+                            <path id="1"
+                              d="M20.3444 10H23.9044V9.048H22.7924V4.08H21.9204C21.5444 4.312 21.1364 4.464 20.5444 4.576V5.304H21.6164V9.048H20.3444V10Z"
+                              fill="white" />
+                          </g>
+                          <g id="Group">
+                            <path id="Vector"
+                              d="M11.133 6.11068C9.57935 6.05241 8.20704 7.14905 7.88899 8.70181C7.72939 9.48153 7.82237 10.2295 8.18969 10.9279C8.65369 11.8111 9.38094 12.3474 10.2959 12.5638C10.3137 15.2607 10.3316 17.9363 10.3499 20.5777C10.7321 20.5843 11.1426 20.5908 11.6175 20.5985C11.6052 20.0526 11.5925 19.5064 11.5787 18.8968C11.9636 18.9053 12.3424 18.9131 12.7189 18.9217L12.7181 17.6207C12.3405 17.6227 11.959 17.6247 11.5737 17.6268C11.5792 17.4427 11.5844 17.2763 11.5907 17.0537C11.9829 17.0745 12.3556 17.0941 12.7172 17.1133C12.717 16.6516 12.7171 16.2327 12.7168 15.7757C12.3491 15.7793 11.9756 15.7825 11.6422 15.7853C11.6354 14.7041 11.6287 13.6355 11.6219 12.5661C13.3936 12.1317 14.3126 10.4756 14.1164 8.92108C13.9198 7.36857 12.6494 6.16741 11.133 6.11068ZM12.3206 10.7521C11.5811 11.5161 10.3585 11.5195 9.62387 10.7598C8.88888 9.99965 8.8991 8.75012 9.64616 7.98148C10.381 7.22622 11.5972 7.22079 12.3295 7.96874C13.0645 8.72022 13.0604 9.98783 12.3206 10.7521Z"
+                              fill="#6B6BF9" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="pl-2">AL兼ルームキー下</div>
                 </div>
                 <div class="dis-flex">
-                  <div>契約開始日</div>
-                  <div style="margin-left: auto"></div>
+                  <div class="pr-3">番号</div>
+                  <div>W86008NJA</div>
+                </div>
+              </div>
+              <div class="mt-1 row-contract dis-flex justify-between px-3">
+                <div class="dis-flex">
+                  <div>
+                    <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Group 583">
+                        <g id="Group 582">
+                          <g id="Group 567">
+                            <circle id="Ellipse 100" cx="10.7393" cy="13.7393" r="10.2393" stroke="#6B6BF9" />
+                            <circle id="Ellipse 103" cx="21.479" cy="6.78269" r="6.28269" fill="#6B6BF9"
+                              stroke="#F5F7F9" />
+                            <path id="1"
+                              d="M20.3444 10H23.9044V9.048H22.7924V4.08H21.9204C21.5444 4.312 21.1364 4.464 20.5444 4.576V5.304H21.6164V9.048H20.3444V10Z"
+                              fill="white" />
+                          </g>
+                          <g id="Group">
+                            <path id="Vector"
+                              d="M11.133 6.11068C9.57935 6.05241 8.20704 7.14905 7.88899 8.70181C7.72939 9.48153 7.82237 10.2295 8.18969 10.9279C8.65369 11.8111 9.38094 12.3474 10.2959 12.5638C10.3137 15.2607 10.3316 17.9363 10.3499 20.5777C10.7321 20.5843 11.1426 20.5908 11.6175 20.5985C11.6052 20.0526 11.5925 19.5064 11.5787 18.8968C11.9636 18.9053 12.3424 18.9131 12.7189 18.9217L12.7181 17.6207C12.3405 17.6227 11.959 17.6247 11.5737 17.6268C11.5792 17.4427 11.5844 17.2763 11.5907 17.0537C11.9829 17.0745 12.3556 17.0941 12.7172 17.1133C12.717 16.6516 12.7171 16.2327 12.7168 15.7757C12.3491 15.7793 11.9756 15.7825 11.6422 15.7853C11.6354 14.7041 11.6287 13.6355 11.6219 12.5661C13.3936 12.1317 14.3126 10.4756 14.1164 8.92108C13.9198 7.36857 12.6494 6.16741 11.133 6.11068ZM12.3206 10.7521C11.5811 11.5161 10.3585 11.5195 9.62387 10.7598C8.88888 9.99965 8.8991 8.75012 9.64616 7.98148C10.381 7.22622 11.5972 7.22079 12.3295 7.96874C13.0645 8.72022 13.0604 9.98783 12.3206 10.7521Z"
+                              fill="#6B6BF9" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="pl-2">ルームキー上</div>
+                </div>
+                <div class="dis-flex">
+                  <div class="pr-3">番号</div>
+                  <div>W86008NJA</div>
                 </div>
               </div>
             </div>
             <div class="mt-5">
-              <div class="font-weight-bold">
+              <div class="font-weight-bold mb-2">
                 <ul class="font-weight-bold">
                   <li>
-                    <span>【受領物一覧】</span>
+                    <span>【備考】</span>
                   </li>
                 </ul>
               </div>
+              <div class="mt-1 py-2 row-contract dis-flex justify-between px-3">
+                <div>メールボックス開錠方法</div>
+                <div>C679</div>
+              </div>
+              <div class="mt-1 py-2 row-contract dis-flex justify-between px-3">
+                <div>宅配ボックス開錠方法</div>
+                <div>業者指定の任意の番号</div>
+              </div>
             </div>
-            <div class="mt-5">
-              <div class="font-weight-bold">
+            <div class="mt-5 mb-4">
+              <div class="font-weight-bold mb-2">
                 <ul class="font-weight-bold">
                   <li>
-                    <span>【受領物一覧】</span>
+                    <span class="pl-1">紛失時の賃借人負担額</span>
                   </li>
                 </ul>
               </div>
-            </div>
-            <div class="mt-5">
-              <div class="font-weight-bold">
-                <ul class="font-weight-bold">
-                  <li>
-                    <span>【受領物一覧】</span>
-                  </li>
-                </ul>
+              <div class="mt-1 py-2 row-contract dis-flex justify-between px-3">
+                <div class="dis-flex">
+                  <div>1</div>
+                  <div class="pl-4">取扱説明書</div>
+                </div>
+                <div class="dis-flex">
+                  <div>16,500 <span class="pl-1">円</span></div>
+                </div>
+              </div>
+              <div class="mt-1 py-2 row-contract dis-flex justify-between px-3">
+                <div class="dis-flex">
+                  <div>2</div>
+                  <div class="pl-4">鍵交換代</div>
+                </div>
+                <div class="dis-flex">
+                  <div>16,500 <span class="pl-1">円</span></div>
+                </div>
               </div>
             </div>
             <div style="line-height: 20px;">
               <div>※家賃発生日前の入室が発覚した際は、日割り家賃等損害賠償を請求する場合がございますので予めご了承下さい。</div>
-              <div>※インターネット配電盤、駐輪場、駐車場等の共用部については下記共用管理会社へご連絡お願い致します。</div>
-              <div class="my-4">
-                <div class="row-contract px-4 py-2 font-weight-bold">
-                  <div class="dis-flex pb-2">
+              <div class="pb-3">※インターネット配電盤、駐輪場、駐車場等の共用部については下記共用管理会社へご連絡お願い致します。</div>
+              <div class="mt-1">
+                <div class="row-contract px-3 py-1">
+                  <div class="dis-flex font-weight-bold">
                     <div>共用管理会社名</div>
                     <div style="margin-left: auto">株式会社ＳＴＡＲ合人社</div>
                   </div>
-                  <div class="dis-flex pb-2">
+                  <div class="dis-flex">
                     <div>電話番号</div>
                     <div style="margin-left: auto">03-5201-3383</div>
                   </div>
                 </div>
               </div>
-              <div class="my-4">
-                <div class="row-contract px-4 py-2 font-weight-bold">
-                  <div class="dis-flex pb-2">
+              <div class="mt-1">
+                <div class="row-contract px-3 py-1">
+                  <div class="dis-flex font-weight-bold">
                     <div>共用管理会社名</div>
                     <div style="margin-left: auto">​株式会社アンビション DX ホールディングス</div>
                   </div>
-                  <div class="dis-flex pb-2">
+                  <div class="dis-flex">
                     <div>電話番号</div>
                     <div style="margin-left: auto">03-6439-8911</div>
                   </div>
